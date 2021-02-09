@@ -4,6 +4,7 @@
   "private": true,
   "description": "A tic tac toe game.",
   "main": "index.js",
+  "homepage": "https://poutingemoji.github.io/react-tutorial-tic-tac-toe",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/react": "^11.2.5",
@@ -15,9 +16,10 @@
     "web-vitals": "^1.1.0"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "deploy": "npm run build && gh-pages -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
